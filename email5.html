@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empower Your Vision with Dynasol Technologies LLC</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header,
+        .footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        .header {
+            background-image: linear-gradient(120deg, #007BFF 40%, #0041C2 100%);
+            animation: slidein 2s ease-out;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        .content {
+            padding: 20px;
+            text-align: left;
+            line-height: 1.6;
+            animation: fadein 3s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-media {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .social-media img {
+            height: 30px;
+            width: auto;
+            margin: 0 5px;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            font-size: 14px;
+        }
+
+        .img1 {
+            height: 350px;
+            width: 100%;
+            max-width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+            object-fit: contain;
+        }
+
+        .graph-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* Make graph-container horizontal for larger screens */
+        @media (min-width: 768px) {
+            .graph-container {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+        .why-choose-us {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .why-choose-us {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        ul {
+            flex: 1;
+            padding-left: 20px;
+            margin: 0;
+            list-style: inside;
+        }
+
+        #container1 {
+            margin: 0 auto;
+            position: relative;
+            width: 80%;
+            max-width: 200px;
+            z-index: 1;
+            flex-shrink: 0;
+        }
+
+        .steam {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #89cdf8;
+            margin-top: -50px;
+            margin-left: 50px;
+            z-index: 0;
+            opacity: 0;
+        }
+
+        #steam1 {
+            -webkit-animation: steam1 4s ease-out infinite;
+            animation: steam1 4s ease-out infinite;
+        }
+
+        #steam3 {
+            -webkit-animation: steam1 4s ease-out 1s infinite;
+            animation: steam1 4s ease-out 1s infinite;
+        }
+
+        @-webkit-keyframes steam1 {
+            0% {
+                transform: translateY(0) translateX(0) scale(0.25);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: translateY(-150px) translateX(-20px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        @keyframes steam1 {
+            0% {
+                transform: translateY(0) translateX(0) scale(0.25);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: translateY(-150px) translateX(-20px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        #steam2 {
+            -webkit-animation: steam2 4s ease-out 0.5s infinite;
+            animation: steam2 4s ease-out 0.5s infinite;
+        }
+
+        #steam4 {
+            -webkit-animation: steam2 4s ease-out 1.5s infinite;
+            animation: steam2 4s ease-out 1.5s infinite;
+        }
+
+        @-webkit-keyframes steam2 {
+            0% {
+                transform: translateY(0) translateX(0) scale(0.25);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: translateY(-150px) translateX(20px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        @keyframes steam2 {
+            0% {
+                transform: translateY(0) translateX(0) scale(0.25);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: translateY(-150px) translateX(20px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        #cup {
+            z-index: 1;
+        }
+
+        #cup-body {
+            position: absolute;
+            height: 100px;
+            width: 150px;
+            border-radius: 0 0 75px 75px;
+            background-color: #89cdf8;
+            margin: auto;
+            display: inline-block;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        #cup-shade {
+            position: relative;
+            height: 150px;
+            width: 100px;
+            background-color: #F3F3F3;
+            display: inline-block;
+            margin-left: 42%;
+            margin-top: -3px;
+            transform: rotate(50deg);
+            z-index: 1;
+        }
+
+        #cup-handle {
+            position: relative;
+            height: 40px;
+            width: 45px;
+            border-radius: 0 75px 75px 0;
+            border: 8px solid #F3F3F3;
+            margin-bottom: 45px;
+            margin-left: 120px;
+            display: inline-block;
+            z-index: 0;
+        }
+
+        #saucer {
+            position: absolute;
+            height: 15px;
+            width: 150px;
+            border-radius: 0 0 50px 50px;
+            background-color: #89cdf8;
+            margin-top: -15px;
+            margin-left: 2px;
+            z-index: 2;
+        }
+
+        #shadow {
+            height: 7px;
+            width: 150px;
+            border-radius: 50%;
+            margin-top: -3px;
+            margin-left: 2px;
+            background-color: #7bb8d4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="http://dynasol.tech/wp-content/uploads/2023/05/white_logo-small1.png" style="width:130px;" />
+            </div>
+            <h1>Welcome to the Future with Dynasol Technologies</h1>
+            <p>Unlock potential with state-of-the-art solutions</p>
+        </div>
+        <div class="content">
+            <div class="why-choose-us">
+                <ul>
+                    <h2>Why Choose Us?</h2>
+                    <p>At Dynasol Technologies LLC, we provide not just services, but custom solutions crafted around
+                        your
+                        unique business needs. Our experienced team understands the unique needs of businesses across various
+                        industries and
+                        we offer a
+                        comprehensive suite of services:</p>
+                    <li>Comprehensive Business Analysis</li>
+                    <li>Seamless Technological Upgrades</li>
+                    <li>Proactive Customer Relations</li>
+                    <li>Effective Data Interpretation and Strategies</li>
+                </ul>
+                <div id="container1">
+                    <div class="steam" id="steam1"></div>
+                    <div class="steam" id="steam2"></div>
+                    <div class="steam" id="steam3"></div>
+                    <div class="steam" id="steam4"></div>
+
+                    <div id="cup">
+                        <div id="cup-body">
+                            <div id="cup-shade"></div>
+                        </div>
+                        <div id="cup-handle"></div>
+                    </div>
+
+                    <div id="saucer"></div>
+
+                    <div id="shadow"></div>
+                </div>
+            </div>
+            <a href="https://dynasol.tech/schedule-meeting/" class="button">Claim Your Free Consultation Now</a>
+            <div class="graph-container">
+                <img src="./images/chart1.webp" alt="Business Graph" class="img1">
+                <img src="./images/chart2.webp" alt="Business Graph" class="img1">
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/dynasol.tech/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/dynasoldottech/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/dynasoltechnologies/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnzG4Qo5R393gw9KoeAimgcSna3dIMuvQ-rrxthn8fLg&s"
+                    alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@dynasol.technologies" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="footer">
+            <p>Dynasol Technologies LLC.<br>📍 8 The Green, STE A, Dover, DE, United States, Delaware<br>
+                📞 (+1) 602 399 7749 📩 info@dynasol.tech
+                <a href="https://dynasol.tech/gdpr-use/" target="_blank"><strong>GDPR Compliance</strong></a>
+                <a href="https://dynasol.tech/privacy-policy-2/" target="_blank"><strong> | Privacy Policy</strong></a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
